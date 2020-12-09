@@ -22,7 +22,7 @@ def won?(board)
 
     next if spots.include?(' ')
 
-    
+    return item 
   end
 
   false
