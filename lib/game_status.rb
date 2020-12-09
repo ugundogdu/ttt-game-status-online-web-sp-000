@@ -19,6 +19,7 @@ def won?(board)
 
   WIN_COMBINATIONS.each do|item|
     spots = [board[item[0]], board[item[1]], board[item[2]]]
+    # spots ['X', ' ', 'O']
 
     next if board[item[0]] == ' ' || board[item[1]] == ' ' || board[item[2]] == ' '
 
