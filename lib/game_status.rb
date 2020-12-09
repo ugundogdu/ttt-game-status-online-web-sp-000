@@ -22,7 +22,7 @@ def won?(board)
 
     next if board_spots.include?(' ')
 
-    return item if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
+    return item if board_spots[0] == board_spots[1] && board_spots[1] == board_spots[2]
   end
 
   false
