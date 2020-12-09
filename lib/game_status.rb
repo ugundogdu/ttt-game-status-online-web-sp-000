@@ -18,12 +18,12 @@ def won?(board)
   return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
   WIN_COMBINATIONS.each do|item|
-    spots = [board[item[0]], board[item[1]], board[item[2]]] # spots ornek: ['O', ' ', 'O']
+    spots = [board[item[0]], board[item[1]], board[item[2]]] # spots ornek: ['X', ' ', 'O']
 
     next if board.include?(' ')
 
     spots.all? do |spot|
-      spot == spots[0]
+      spot == spots[]
     end
   end
 
