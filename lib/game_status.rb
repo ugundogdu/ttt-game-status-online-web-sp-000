@@ -20,7 +20,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |item|
     board_spots = [board[item[0]] , board[item[1]], board[item[2]]]
 
-    next if spots.include?(' ')
+    next if board_spots.include?(' ')
 
     return item if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
   end
