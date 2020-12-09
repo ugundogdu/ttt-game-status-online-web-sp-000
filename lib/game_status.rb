@@ -30,5 +30,5 @@ def won?(board)
 end
 
 def full?(board)
-  return true if board.include?(' ')
+  return false if board.include?(' ')
 end
