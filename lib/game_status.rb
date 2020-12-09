@@ -33,3 +33,6 @@ def full?(board)
   return false if board.include?(' ')
   true
 end
+
+def draw?(board)
+end
