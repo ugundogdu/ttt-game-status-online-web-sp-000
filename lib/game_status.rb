@@ -18,12 +18,9 @@ def won?(board)
   return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
   WIN_COMBINATIONS.each do |item|
-    board_spots = [board[item[0]] , board[item[1]], board[item[2]]]
+    if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
 
-    next if board_spots.include?(' ')
-
-    return item if board_spots[0] == board_spots[1] && board_spots[1] == board_spots[2]
+    end
+      next if board['   ']
   end
-
-  false
 end
