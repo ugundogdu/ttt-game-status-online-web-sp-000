@@ -22,9 +22,7 @@ def won?(board)
 
     next if board.include?(' ')
 
-    return item if spots.all? do |spot|
-      spot == spots[0]
-    end
+    
   end
 
   false
