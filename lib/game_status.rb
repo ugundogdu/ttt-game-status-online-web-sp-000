@@ -23,6 +23,7 @@ def won?(board)
     next if board.include?(' ')
 
     spots.all? do |spot|
+      spot == spots[0]
     end
   end
 
