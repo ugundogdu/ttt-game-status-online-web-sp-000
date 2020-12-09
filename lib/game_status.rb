@@ -18,7 +18,7 @@ def won?(board)
   return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
   WIN_COMBINATIONS.each do|item|
-    next if board[item[0]] == ' '
+    next if board[item[0]] == ' ' || board[item[1]] == ' ' || board[item[2]] == ' '
 
     if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
       return item
