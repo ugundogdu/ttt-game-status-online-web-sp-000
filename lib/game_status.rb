@@ -21,7 +21,7 @@ def won?(board)
     spots = [board[item[0]], board[item[1]], board[item[2]]] # spots ornek: ['X', ' ', 'O']
     next if spots.include?(' ')
 
-    return item 
+    if spots[0] == spots[1] && spots[1] == spots[2]
   end
 
   false
