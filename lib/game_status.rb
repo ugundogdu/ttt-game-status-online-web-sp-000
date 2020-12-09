@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-    return false
+  return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+
   end
 end
