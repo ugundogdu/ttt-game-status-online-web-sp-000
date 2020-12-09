@@ -15,7 +15,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+  if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+    return false
+  end
 
   WIN_COMBINATIONS.each do|item|
     spots = [board[item[0]], board[item[1]], board[item[2]]] # spots ornek: ['X', ' ', 'O']
