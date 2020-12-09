@@ -19,5 +19,7 @@ def won?(board)
     return false
   end
 
-  
+  WIN_COMBINATIONS.each do |item|
+    
+  end
 end
