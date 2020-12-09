@@ -58,6 +58,6 @@ def winner(board)
     winning_index = won?(board)
     return board[winning_index[0]]
   else
-    false
+    nil
   end
 end
