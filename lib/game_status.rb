@@ -18,6 +18,6 @@ def won?(board)
   return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
   WIN_COMBINATIONS.each do |item|
-    next if item.map {   }
+    next if item.map {  }
   end
 end
