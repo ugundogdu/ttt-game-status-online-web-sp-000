@@ -19,7 +19,7 @@ def won?(board)
 
   WIN_COMBINATIONS.each do|item|
     positions = []
-    
+
     next if board[item[0]] == ' ' || board[item[1]] == ' ' || board[item[2]] == ' '
 
     if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
