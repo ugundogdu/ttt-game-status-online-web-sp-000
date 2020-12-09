@@ -31,5 +31,5 @@ end
 
 def full?(board)
   return false if board.include?(' ')
-  return true
+  true
 end
