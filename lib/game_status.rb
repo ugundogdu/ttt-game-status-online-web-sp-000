@@ -15,11 +15,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-    return false
-  end
+  return false if board == [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
   WIN_COMBINATIONS.each do |item|
-    
+
   end
 end
