@@ -22,6 +22,7 @@ def won?(board)
     next if spots.include?(' ')
 
     if spots[0] == spots[1] && spots[1] == spots[2]
+      
     end
   end
 
