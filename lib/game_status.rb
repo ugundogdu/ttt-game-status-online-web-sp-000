@@ -20,6 +20,6 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |item|
-    if board[item[0]]
+    puts item
   end
 end
