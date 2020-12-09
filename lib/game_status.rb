@@ -21,7 +21,7 @@ def won?(board)
     spots = [board[item[0]], board[item[1]], board[item[2]]]
     # spots ['X', ' ', 'O']
 
-    next if board[item[0]] == ' ' || board[item[1]] == ' ' || board[item[2]] == ' '
+    next if board.include?(' ')
 
     if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
       return item
