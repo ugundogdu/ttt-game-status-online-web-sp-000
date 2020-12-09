@@ -20,7 +20,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |item|
     spots = item.map { |index| board[index] == ' ' }
 
-    next if 
+    next if spots.include?(' ')
 
     return item if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
   end
