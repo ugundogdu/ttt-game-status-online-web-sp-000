@@ -22,4 +22,6 @@ def won?(board)
       return item
     end
   end
+
+  false
 end
