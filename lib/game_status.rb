@@ -20,9 +20,6 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |item|
-    item.each do |index|
-      return false if board[index] == ' '
-    end
 
     if board[item[0]] == board[item[1]] && board[item[1]] == board[item[2]]
       return item
